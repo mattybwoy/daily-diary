@@ -93,3 +93,6 @@ Then open your web browser into the resulting terminal. localhost:####
 3. Connect to the database using the psql command \c diary;
 4. Run the query we have saved in the file 01_create_diary_table.sql
 5. We have created a new test database using the same commands as above, except called the new table, diary_test.
+
+## Contributors
+

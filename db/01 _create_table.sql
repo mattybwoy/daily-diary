@@ -1,0 +1,7 @@
+CREATE TABLE entry
+(
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(60),
+  entry VARCHAR(280),
+  posting_date DATE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
