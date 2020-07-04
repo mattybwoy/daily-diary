@@ -1,3 +1,5 @@
+CREATE DATABASE diary
+
 CREATE TABLE entry
 (
   id SERIAL PRIMARY KEY,

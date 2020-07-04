@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'pg'
+require './lib/diary'
 
 class Diary < Sinatra::Base
   
@@ -8,8 +9,8 @@ class Diary < Sinatra::Base
   end
 
   post '/added' do
-  #@entry = params[:entry_box]
-  #@connection.exec("INSERT INTO entry (entry) VALUES('#{@entry}')")
+  @entry = params[:entry_box]
+  @connection.exec("INSERT INTO entry (entry) VALUES('#{@entry}')")
   erb :added
   end
 
